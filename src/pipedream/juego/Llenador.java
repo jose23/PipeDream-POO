@@ -25,7 +25,7 @@ public class Llenador extends Thread{
     private boolean pausa = false;
     
     
-    public Llenador(String nombre, Tablero tablero, Listener listener){
+    public Llenador(Tablero tablero, Listener listener){
         this.tablero = tablero;
         this.listener = listener;
     }

@@ -29,7 +29,7 @@ public class Juego implements Listener {
         tablero = new Tablero();
         cola = new ColaCanios();
         this.mp = mp;
-        llenador = new Llenador("llenador", tablero, this);
+        llenador = new Llenador(tablero, this);
         this.listener = listener;
     }
     
