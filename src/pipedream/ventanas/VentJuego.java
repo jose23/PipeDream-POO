@@ -390,7 +390,9 @@ public class VentJuego extends javax.swing.JFrame implements Listener{
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         // TODO add your handling code here:
-            juego.salir();
+        if(juego.getPausa())
+            juego.pausar();
+        juego.salir();
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void lookAndFeel(){
